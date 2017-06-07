@@ -110,6 +110,10 @@ public class MessageBuffer {
         logger.info("Done checking for empty key values");
     }
 
+    /**
+     * Set the timer represented in minutes
+     * @param timer in minutes
+     */
     public void setTimer(int timer)     {
         logger.info("Setting timer to keep messages into buffer");
         this.timer = timer;

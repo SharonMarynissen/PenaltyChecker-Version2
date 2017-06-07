@@ -21,6 +21,8 @@ public class PenaltyChecker {
         OutputService outputService = new ViolationQueue(uriOutput, "VIOLATIONS", new DTOToStringFormatter());
         CameraInformationService cameraInformationService = new CameraService(new JSONCameraMessageFormatter());
         LicensePlateInformationService licensePlateInformationService = new LicensePlateService(new JSONLicensePlateMessageFormatter());
+        licensePlateInformationService.setTimer(500);
+        licensePlateInformationService.setTimesToReCheck(3);
 
         Manager manager = new Manager(inputService);
         manager.setOutputService(outputService);
