@@ -15,7 +15,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link SpeedLimitChecker}
  */
 public class SpeedLimitCheckerTest {
     SpeedLimitChecker checker;

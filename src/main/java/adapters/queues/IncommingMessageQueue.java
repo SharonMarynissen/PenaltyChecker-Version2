@@ -2,7 +2,7 @@ package adapters.queues;
 
 import com.rabbitmq.client.*;
 import domain.CommunicationException;
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import domain.services.InputListener;
 import domain.services.InputService;
 import domain.services.MessageFormatter;
@@ -56,7 +56,7 @@ public class IncommingMessageQueue implements InputService {
                     if(listener != null){
                         try {
                             logger.info("Delivered message to listener");
-                            listener.onReceive((IncommingMessageDTO) formatter.format(content));
+                            listener.onReceive((IncomingMessageDTO) formatter.format(content));
                         } catch (Exception e){
                             logger.error("Exception during callback to listener", e);
                         }

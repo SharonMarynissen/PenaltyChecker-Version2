@@ -1,7 +1,7 @@
 package domain.messages;
 
 import dtos.CameraServiceMessageDTO;
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import dtos.LicensePlateServiceMessageDTO;
 
 import java.time.LocalTime;
@@ -23,10 +23,10 @@ public class Message {
 
     public Message(){ }
 
-    public Message(IncommingMessageDTO incommingMessageDTO){
-        this.cameraId = incommingMessageDTO.getCameraId();
-        this.timestamp = incommingMessageDTO.getTimestamp();
-        this.licensePlate = incommingMessageDTO.getLicensePlate();
+    public Message(IncomingMessageDTO incomingMessageDTO){
+        this.cameraId = incomingMessageDTO.getCameraId();
+        this.timestamp = incomingMessageDTO.getTimestamp();
+        this.licensePlate = incomingMessageDTO.getLicensePlate();
     }
 
     public Message(CameraServiceMessageDTO cameraServiceMessageDTO){

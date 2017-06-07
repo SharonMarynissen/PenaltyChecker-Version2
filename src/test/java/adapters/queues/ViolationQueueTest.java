@@ -12,7 +12,7 @@ import org.junit.Test;
 import java.time.LocalTime;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link ViolationQueue}
  */
 public class ViolationQueueTest {
     final String uriOutput = "amqp://ssgtyban:xuDLGGEDGZ5Toci-gDcUMnbG7IG2M294@puma.rmq.cloudamqp.com/ssgtyban";

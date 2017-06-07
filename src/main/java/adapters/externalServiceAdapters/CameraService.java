@@ -2,7 +2,7 @@ package adapters.externalServiceAdapters;
 
 import domain.services.CameraInformationService;
 import dtos.CameraServiceMessageDTO;
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import be.kdg.se3.services.CameraServiceProxy;
 import com.sun.istack.internal.logging.Logger;
 import domain.CommunicationException;
@@ -23,7 +23,7 @@ public class CameraService implements CameraInformationService {
     }
 
     @Override
-    public CameraServiceMessageDTO getInfo(IncommingMessageDTO messageDTO) throws CommunicationException {
+    public CameraServiceMessageDTO getInfo(IncomingMessageDTO messageDTO) throws CommunicationException {
         CameraServiceMessageDTO cameraServiceMessageDTO;
 
         try {

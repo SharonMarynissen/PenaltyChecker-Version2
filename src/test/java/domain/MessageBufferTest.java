@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.time.LocalTime;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link MessageBuffer}
  */
 public class MessageBufferTest {
     MessageBuffer buffer = new MessageBuffer();

@@ -10,7 +10,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Class test for {@link JSONCameraMessageFormatter}
  */
 public class JSONCameraMessageFormatterTest {
     JSONCameraMessageFormatter formatter = new JSONCameraMessageFormatter();

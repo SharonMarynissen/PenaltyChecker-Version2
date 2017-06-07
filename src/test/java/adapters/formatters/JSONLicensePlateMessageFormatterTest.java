@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link JSONLicensePlateMessageFormatter}
  */
 public class JSONLicensePlateMessageFormatterTest {
     JSONLicensePlateMessageFormatter formatter = new JSONLicensePlateMessageFormatter();

@@ -1,6 +1,6 @@
 package domain.services;
 
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 
 
 /**
@@ -11,5 +11,5 @@ public interface InputListener {
      * Methode called every time a message is received
      * @param messageDTO
      */
-    void onReceive(IncommingMessageDTO messageDTO);
+    void onReceive(IncomingMessageDTO messageDTO);
 }

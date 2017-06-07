@@ -2,7 +2,7 @@ package adapters.externalServiceAdapters;
 
 import adapters.formatters.JSONCameraMessageFormatter;
 import dtos.CameraServiceMessageDTO;
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import domain.messages.LicensePlate;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,22 +12,22 @@ import java.time.LocalTime;
 import static org.junit.Assert.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link CameraService}
  */
 public class CameraServiceTest {
-    IncommingMessageDTO messageDTO1;
-    IncommingMessageDTO messageDTO2;
+    IncomingMessageDTO messageDTO1;
+    IncomingMessageDTO messageDTO2;
     CameraService cameraService;
 
     @Before
     public void init(){
         cameraService = new CameraService(new JSONCameraMessageFormatter());
-        messageDTO1 =  new IncommingMessageDTO();
+        messageDTO1 =  new IncomingMessageDTO();
         messageDTO1.setCameraId(1);
         messageDTO1.setTimestamp(LocalTime.of(11, 42, 13));
         messageDTO1.setLicensePlate(new LicensePlate("1-AAA-111"));
 
-        messageDTO2 = new IncommingMessageDTO();
+        messageDTO2 = new IncomingMessageDTO();
         messageDTO2.setCameraId(2);
         messageDTO2.setTimestamp(LocalTime.of(11, 45, 13));
         messageDTO2.setLicensePlate(new LicensePlate("1-BBB-111"));

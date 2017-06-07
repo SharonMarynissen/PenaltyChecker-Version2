@@ -44,7 +44,7 @@ public class Manager implements InputListener {
     }
 
     @Override
-    public void onReceive(IncommingMessageDTO messageDTO) {
+    public void onReceive(IncomingMessageDTO messageDTO) {
         logger.info("Received message from InputService");
         Message message = new Message(messageDTO);
 

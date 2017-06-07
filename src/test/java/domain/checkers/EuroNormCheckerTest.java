@@ -13,7 +13,7 @@ import java.time.LocalTime;
 import static org.junit.Assert.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link EuroNormChecker}
  */
 public class EuroNormCheckerTest {
     EuroNormChecker euroNormChecker;

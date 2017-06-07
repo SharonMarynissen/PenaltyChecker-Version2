@@ -1,6 +1,6 @@
 package adapters.formatters;
 
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import domain.messages.LicensePlate;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,12 +10,12 @@ import java.time.LocalTime;
 import static org.junit.Assert.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Test class for {@link XMLToDTOFormatter}
  */
 public class XMLToDTOFormatterTest {
     XMLToDTOFormatter formatter = new XMLToDTOFormatter();
-    IncommingMessageDTO messageDTO1 = new IncommingMessageDTO();
-    IncommingMessageDTO messageDTO2 = new IncommingMessageDTO();
+    IncomingMessageDTO messageDTO1 = new IncomingMessageDTO();
+    IncomingMessageDTO messageDTO2 = new IncomingMessageDTO();
     String messageString1;
     String messageString2;
 
@@ -40,8 +40,8 @@ public class XMLToDTOFormatterTest {
 
     @Test
     public void format() throws Exception {
-        IncommingMessageDTO transformed1 = formatter.format(messageString1);
-        IncommingMessageDTO transformed2 = formatter.format(messageString2);
+        IncomingMessageDTO transformed1 = formatter.format(messageString1);
+        IncomingMessageDTO transformed2 = formatter.format(messageString2);
 
         assertNotNull("Should not be null", transformed1);
         assertNotNull("Should not be null", transformed2);

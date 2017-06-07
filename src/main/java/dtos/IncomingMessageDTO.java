@@ -9,12 +9,12 @@ import java.time.format.FormatStyle;
 /**
  * Data Transfer Object for converting an incoming message format to a message
  */
-public class IncommingMessageDTO {
+public class IncomingMessageDTO {
     private int cameraId;
     private LicensePlate licensePlate;
     private LocalTime timestamp;
 
-    public IncommingMessageDTO() {
+    public IncomingMessageDTO() {
     }
 
     public void setCameraId(int cameraId)                        { this.cameraId = cameraId; }

@@ -10,7 +10,7 @@ import domain.Manager;
 import domain.services.*;
 
 /**
- * Created by Sharon on 6/06/2017.
+ * Main test class
  */
 public class PenaltyChecker {
     public static void main(String[] args) {

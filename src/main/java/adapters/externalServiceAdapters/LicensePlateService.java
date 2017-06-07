@@ -5,11 +5,10 @@ import com.sun.istack.internal.logging.Logger;
 import domain.CommunicationException;
 import domain.services.LicensePlateInformationService;
 import domain.services.MessageFormatter;
-import dtos.IncommingMessageDTO;
+import dtos.IncomingMessageDTO;
 import dtos.LicensePlateServiceMessageDTO;
 
 import java.io.IOException;
-import java.time.LocalTime;
 
 
 /**
@@ -29,7 +28,7 @@ public class LicensePlateService implements LicensePlateInformationService {
     }
 
     @Override
-    public LicensePlateServiceMessageDTO getInfo(IncommingMessageDTO messageDTO) throws CommunicationException {
+    public LicensePlateServiceMessageDTO getInfo(IncomingMessageDTO messageDTO) throws CommunicationException {
         String messageReturned;
         LicensePlateServiceMessageDTO licensePlateServiceMessageDTO = null;
 
