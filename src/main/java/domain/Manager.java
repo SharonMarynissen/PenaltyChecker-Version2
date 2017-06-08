@@ -38,6 +38,8 @@ public class Manager implements InputListener {
     public void stop() {
         try {
             inputService.shutdown();
+            if(outputService != null)
+                outputService.shutdown();
         } catch (CommunicationException e) {
             logger.warn("Unable to properly shut down communication channel");
         }
