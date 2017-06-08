@@ -14,8 +14,7 @@ public class MessageBuffer {
     private Map<Integer, List<Message>> buffer;
     private Logger logger = Logger.getLogger(MessageBuffer.class);
     private int timer = 30;
-    //private LocalTime now = LocalTime.now();
-    private LocalTime now = LocalTime.of(12,12,18);
+    private LocalTime now;
 
     public MessageBuffer(){
         buffer = new ConcurrentHashMap<>();
@@ -74,6 +73,8 @@ public class MessageBuffer {
     }
 
     private void checkTime(){
+        //now = LocalTime.now();
+        now = LocalTime.of(12,12,18);   //This is just for testing, in reality you will use LocalTime.now()
         logger.info("Starting to check the timestamps of the buffered messages");
         Set<Integer> keyvalues = buffer.keySet();
 
