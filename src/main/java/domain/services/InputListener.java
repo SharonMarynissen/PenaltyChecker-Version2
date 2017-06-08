@@ -9,7 +9,7 @@ import dtos.IncomingMessageDTO;
 public interface InputListener {
     /**
      * Methode called every time a message is received
-     * @param messageDTO
+     * @param messageDTO the message received from input service
      */
     void onReceive(IncomingMessageDTO messageDTO);
 }

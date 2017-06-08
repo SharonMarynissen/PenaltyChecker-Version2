@@ -2,7 +2,6 @@ package domain.checkers;
 
 import domain.messages.Message;
 import domain.violations.EuroNormViolation;
-import domain.violations.Violation;
 import org.apache.log4j.Logger;
 
 /**

@@ -2,7 +2,6 @@ package domain.checkers;
 
 import domain.messages.Message;
 import domain.violations.SpeedViolation;
-import domain.violations.Violation;
 import org.apache.log4j.Logger;
 
 import java.time.Duration;

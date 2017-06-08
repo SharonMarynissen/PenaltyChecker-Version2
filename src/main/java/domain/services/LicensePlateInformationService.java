@@ -24,7 +24,7 @@ public interface LicensePlateInformationService {
 
     /**
      * Set number of times you want to try to do a recall to a license plate service
-     * @param timesToReCheck
+     * @param timesToReCheck number of times you want to retry to do a call to the license plate service
      */
     void setTimesToReCheck(int timesToReCheck);
 }
